@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="login-buttons">
+  <!-- Button to open the Admin login modal -->
+  <button onclick="document.getElementById('adminModal').style.display='block'">Admin</button>
+  
+  <!-- Button to open the Buyer login modal -->
+  <button onclick="document.getElementById('buyerModal').style.display='block'">Buyer</button>
+  
+  <!-- Button to open the Seller login modal -->
+  <button onclick="document.getElementById('sellerModal').style.display='block'">Seller</button>
+</div>
+
+<!-- Admin Login Modal -->
+<div id="adminModal" class="modal">
+  <span onclick="document.getElementById('adminModal').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/admin_login.php">
+    <div class="imgcontainer">
+      <img src="user-avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="adminuname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="adminuname" required>
+      <label for="adminpsw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="adminpsw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('adminModal').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Buyer Login Modal -->
+<div id="buyerModal" class="modal">
+  <span onclick="document.getElementById('buyerModal').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/buyer_login.php">
+    <div class="imgcontainer">
+      <img src="user-avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="buyeruname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="buyeruname" required>
+      <label for="buyerpsw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="buyerpsw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('buyerModal').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Seller Login Modal -->
+<div id="sellerModal" class="modal">
+  <span onclick="document.getElementById('sellerModal').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/seller_login.php">
+    <div class="imgcontainer">
+      <img src="user-avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="selleruname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="selleruname" required>
+      <label for="sellerpsw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="sellerpsw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#d21a1a">
+      <button type="button" onclick="document.getElementById('sellerModal').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

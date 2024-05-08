@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Record</title>
+    <link rel="stylesheet" href="createrecord.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Record</h2>
+        <form id="createForm">
+            <label for="houseNumber"><b>House Number:</b></label>
+            <input type="text" id="houseNumber" name="houseNumber"><br>
+
+            <label for="address"><b>Address:</b></label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="location"><b>Location:</b></label>
+            <select id="location" name="location">
+                <option value="ECR Road (East Coast Road)">ECR Road (East Coast Road)</option>
+                <option value="Kuruchikuppam">Kuruchikuppam</option>
+                <option value="Kalapet">Kalapet</option>
+                <option value="Nainarmandapam">Nainarmandapam</option>
+                <option value="Lawspet Main Road">Lawspet Main Road</option>
+                <option value="White Town (Ville Blanche)">White Town (Ville Blanche)</option>
+                <option value="Heritage Town (Ville Heritage)">Heritage Town (Ville Heritage)</option>
+                <option value="Mission Street">Mission Street</option>
+                <option value="Lawspet">Lawspet</option>
+                <option value="Reddiarpalayam">Reddiarpalayam</option>
+                <option value="Kottakuppam">Kottakuppam</option>
+                <option value="Auroville">Auroville</option>
+                <option value="Muthialpet">Muthialpet</option>
+                <option value="Nellithope">Nellithope</option>
+                <option value="Mudaliarpet">Mudaliarpet</option>
+                <option value="Orleanpet">Orleanpet</option>
+                <option value="Oulgaret">Oulgaret</option>
+                <option value="Rainbow Nagar">Rainbow Nagar</option>
+                <option value="Thattanchavady">Thattanchavady</option>
+                <option value="Thavalakuppam">Thavalakuppam</option>
+                <option value="Villianur">Villianur</option>
+                <option value="Ariyankuppam">Ariyankuppam</option>
+            </select><br>
+
+            <label for="ownership"><b>Ownership:</b></label>
+            <input type="text" id="ownership" name="ownership"><br>
+
+            <label for="architecturalStyle"><b>Architectural Style:</b></label>
+            <input type="text" id="architecturalStyle" name="architecturalStyle"><br>
+
+            <label for="yearOfConstruction"><b>Year of Construction:</b></label>
+            <input type="text" id="yearOfConstruction" name="yearOfConstruction"><br>
+
+            <label for="price"><b>Price:</b></label>
+            <input type="text" id="price" name="price"><br>
+
+            <label for="homeInspection"><b>Home Inspection:</b></label>
+            <textarea id="homeInspection" name="homeInspection"></textarea><br>
+
+            <label for="defects"><b>Defects/Repairs Needed:</b></label>
+            <textarea id="defects" name="defects"></textarea><br>
+
+            <label for="contactInformation"><b>Contact Information:</b></label>
+            <input type="text" id="contactInformation" name="contactInformation"><br>
+
+            <label for="photo"><b>Upload Photo:</b></label>
+            <input type="file" id="photo" name="photo"><br>
+
+            <label for="publicRecord"><b>Public Record:</b></label>
+            <input type="file" id="publicRecord" name="publicRecord" multiple><br>
+
+            <div class="button-container">
+                <button type="button" id="previousButton" class="symbol-button">&#8249;</button>
+                <button type="button" id="saveButton">Save</button>
+                <button type="button" id="commitButton">Commit</button>
+                <button type="button" id="updateButton">&#8634;</button>
+                <button type="button" id="clearButton">Clear</button>
+                <button type="button" id="nextButton" class="symbol-button">&#8250;</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="createrecord.js"></script>
+</body>
+</html>
